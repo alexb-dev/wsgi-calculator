@@ -88,7 +88,7 @@ def resolve_path(path):
     except KeyError:
         raise NameError
     except IndexError:
-        if func_str != '\\':
+        if func_str != '':
             raise NameError
     return func, args
 import traceback
@@ -120,9 +120,14 @@ def application(environ, start_response):
         return [body.encode('utf8')]
 
 
-# start the WSGI server at http://localhost:8080 
-if __name__ == '__main__':
+def main():
         print('Starting server at 8080.')
         from wsgiref.simple_server import make_server
         srv = make_server('localhost', 8080, application)
         srv.serve_forever()
+
+# start the WSGI server at http://localhost:8080 
+if __name__ == '__main__':
+    main()
+
+
