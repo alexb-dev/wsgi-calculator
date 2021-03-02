@@ -1,4 +1,5 @@
 # WSGI Calculator
+[![Python application](https://github.com/alexb-dev/wsgi-calculator/actions/workflows/python-app.yml/badge.svg)](https://github.com/alexb-dev/wsgi-calculator/actions/workflows/python-app.yml)
 
 Your assignment is to create a WSGI calculator that you can use to add, subtract, multiply, or divide two numbers.
 
